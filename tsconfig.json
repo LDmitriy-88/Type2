@@ -1,0 +1,17 @@
+{
+    "compilerOptions":{
+        "target": "es5",
+        "lib":["es2019","dom"],
+        "module": "ES2020",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "outDir": "./nice",
+        "experimentalDecorators": true
+    },
+
+    "files":["main.ts", "./travelShop/app/services/modal/modalService.ts"],
+    "include":["./files/**/*"],
+    /*"extends": "./tsconfig-extends.json",*/
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "compileOnSave": true
+}

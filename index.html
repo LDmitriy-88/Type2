@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+body {height: 100%}
+.modal-wrap{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+}
+.modal-btn{
+  padding: 10px;
+  background: aquamarine;
+  width: 90px;
+  cursor: pointer;
+  margin: 10px;
+}
+.btn-second{
+  width: 120px;
+  border: 2px solid green;
+}
+
+.modal-element{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid grey;
+}
+
+#first{
+  margin-top: 20px;
+  margin-left: 300px;
+  border: 2px solid green;
+}
+
+  </style>
+</head>
+<body class="body">
+  <div class="modal-wrap">
+      <button class="modal-btn" onclick="openModal('first')">Открыть </button>
+      <button class="modal-btn btn-second" onclick="openModalSecond('second')">Открыть модалку 2</button>
+      <button class="modal-btn" onclick="removeModal()">Удалить</button>
+      <button class="modal-btn" onclick="removeAll()">Удалить всё</button>
+</div>
+
+
+
+  <script  type ="module" src="./dist/bundle.js"></script>
+</body>
+</html>
